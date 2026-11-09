@@ -66,3 +66,14 @@ The initial public experience is English-first. The architecture must support lo
 ## Change control
 
 Any change to a foundational decision must be proposed in a pull request and recorded in `docs/DECISION_REGISTER.md`. Do not silently replace a selected provider or framework. If a provider becomes unsuitable, propose an adapter-compatible alternative and document trade-offs.
+
+## Foundation application
+
+The first homepage slice is a Next.js App Router application. It requires Node.js 20.9 or newer (Node 22 is used in CI) and no service credentials.
+
+```sh
+npm ci
+npm run dev
+```
+
+Open http://localhost:3000. Run `npm run lint`, `npm run typecheck`, and `npm run build` for the current quality checks. The homepage uses conceptual AI-generated artwork, labeled as such, rather than verified wildlife media. The species explorer searches a small, static, manually curated demonstration dataset; each profile links to the source used. It is not a complete or authoritative catalogue, and source accounts may become outdated. Learning guides are not yet implemented. Run `npm test` for the demo dataset and search checks. The full Phase 0 acceptance criteria remain open. No database, external API, or paid service is required.
