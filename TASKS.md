@@ -54,3 +54,7 @@
 ## Definition of done for any task
 
 A task is done only when the implementation, tests, documentation, accessibility/security implications, and AI handoff report are complete. If something could not be tested, say so explicitly.
+
+## Foundation handoff
+
+The initial application and homepage slice are implemented; this does **not** complete Phase 0. A four-species static demo, basic search and source-linked profiles are now available. Broader source and taxonomy review, living and extinct demo coverage, shadcn/ui setup, automated component/E2E tests, and full accessibility and responsive verification remain open. Homepage artwork is AI-generated conceptual imagery, not source media. See README for local commands and CHANGELOG for the implementation summary.
